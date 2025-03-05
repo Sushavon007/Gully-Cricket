@@ -11,4 +11,4 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # Gully-Cricket
-### Check out: <a href="https://vercel.com/sushavon098-gmailcoms-projects/gully-cricket/5YJXNFj3xAZ6i98kBjEadNC1mKeR" target="_blank">https://vercel.com/sushavon098-gmailcoms-projects/gully-cricket/5YJXNFj3xAZ6i98kBjEadNC1mKeR</a>
+### <a href="https://gully-cricket-56yhvhbu4-sushavon098-gmailcoms-projects.vercel.app/" target="_blank">Click here to visit/</a>
