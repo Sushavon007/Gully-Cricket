@@ -2,12 +2,14 @@ import { useState } from "react";
 import Button from "./components/Button";
 import background from "./assets/bg.jpg";
 import "./index.css";
+import Popup from "./components/Popup";
 
 function App() {
   const [score, setScore] = useState(0);
   const [over, setOver] = useState(0);
   const [wicket, setWicket] = useState(10);
   const [balls, setBalls] = useState(0);
+  const [isPopupVisible, setPopupVisible] = useState(false);
 
   return (
     <>
@@ -33,6 +35,17 @@ function App() {
           </div>
           <div className="flex flex-wrap w-full p-2 lg:gap-10 gap-5 justify-center items-center">
             <Button
+              label="Dot"
+              score={score}
+              setScore={setScore}
+              over={over}
+              setOver={setOver}
+              wicket={wicket}
+              setWicket={setWicket}
+              balls={balls}
+              setBalls={setBalls}
+            />
+            <Button
               label="Single"
               run={1}
               score={score}
@@ -57,7 +70,7 @@ function App() {
               setBalls={setBalls}
             />
             <Button
-              label="Three"
+              label="Triple"
               run={3}
               score={score}
               setScore={setScore}
@@ -129,11 +142,12 @@ function App() {
               setWicket={setWicket}
               balls={balls}
               setBalls={setBalls}
+              setPopupVisible={setPopupVisible}
             />
             <Button
               label="Out"
               score={score}
-              isOut={1}
+              isOut={wicket > 0 ? 1 : 0}
               setScore={setScore}
               over={over}
               setOver={setOver}
@@ -145,6 +159,19 @@ function App() {
           </div>
         </div>
       </div>
+      {isPopupVisible && (
+        <Popup
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+      )}
     </>
   );
 }

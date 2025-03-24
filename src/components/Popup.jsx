@@ -1,0 +1,103 @@
+import React from "react";
+import Button from "./Button";
+
+function Popup({score, setScore, over, setOver, wicket, setWicket, balls, setBalls, setPopupVisible}) {
+  return (
+    <div className="fixed top-0 left-0 w-full h-screen backdrop-blur-sm flex justify-center items-center z-10">
+      <div className="bg-black/50 p-10 rounded-3xl shadow-lg gap-5 flex flex-wrap lg:gap-10 justify-center items-center w-[80%] lg:w-[50%] md:w-[60%]">
+        <Button
+          label="Dot"
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+        <Button
+          label="Single"
+          run={1}
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+        <Button
+          label="Double"
+          run={2}
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+        <Button
+          label="Triple"
+          run={3}
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+        <Button
+          label="Boundary"
+          run={4}
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+        <Button
+          label="Five"
+          run={5}
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+        <Button
+          label="Sixer"
+          run={6}
+          score={score}
+          setScore={setScore}
+          over={over}
+          setOver={setOver}
+          wicket={wicket}
+          setWicket={setWicket}
+          balls={balls}
+          setBalls={setBalls}
+          setPopupVisible={setPopupVisible}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Popup;
